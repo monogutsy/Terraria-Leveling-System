@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net4.7.2</TargetFramework>
+	<LangVersion>latest</LangVersion>
+    <RootNamespace>Test_Plugin</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mono.Data.Sqlite.Portable" Version="1.0.3.5" />
+    <PackageReference Include="MySql.Data" Version="9.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Creative Mode">
+      <HintPath>..\..\..\Tshock\ServerPlugins\CreativeMode.dll</HintPath>
+    </Reference>
+    <Reference Include="HttpServer">
+      <HintPath>..\..\..\Tshock\bin\HttpServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ModFramework">
+      <HintPath>..\..\..\Tshock\bin\ModFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="OTAPI">
+      <HintPath>..\..\..\Tshock\bin\OTAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="OTAPI.Runtime">
+      <HintPath>..\..\..\Tshock\bin\OTAPI.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="TerrariaServer">
+      <HintPath>..\..\..\Tshock\bin\TerrariaServer.dll</HintPath>
+    </Reference>
+    <Reference Include="TShockAPI">
+      <HintPath>..\..\..\TShockAPI (1).dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
